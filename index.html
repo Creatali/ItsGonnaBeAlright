@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.5/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.5/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.5/dist/js/uikit-icons.min.js"></script>
+    <title>Happy Place</title>
+    <style>
+        .xenegugeli {
+            padding: 1ex;
+        }
+
+        .xenetali {
+            padding-top: 3ex;
+        }
+
+        .footer {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            flex: 1;
+            flex-direction: column;
+        
+
+        }
+
+        .creatali {
+            overflow: hidden;
+            position: relative;
+            min-height: 100vh;
+        }
+        .color {
+            color:black;
+            padding-bottom: 3ex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="creatali">
+        <div class="uk-container uk-container-xsmall">
+
+
+
+
+
+            <h1>This website will make you happy</h1>
+            <h2>So Please start by Pressing the button</h2>
+
+            <div class="xenegugeli">
+                <!-- This is a button toggling the modal with the default close button -->
+                <button class="uk-button uk-button-default uk-margin-big-right" type="button"
+                    uk-toggle="target: #modal-close-default">This Button</button>
+
+                <!-- This is the modal with the default close button -->
+                <div id="modal-close-default" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <h2 class="uk-modal-title">Default</h2>
+                        <p>Well done! Now Please continue by pressing the next Button</p>
+                    </div>
+                </div>
+            </div>
+            <div class="xenegugeli">
+                <button class="demo uk-button uk-button-default" type="button"
+                    onclick="UIkit.notification({message: 'You are so great. Now hover over the :) Button'})">I
+                    am
+                    the
+                    next
+                    Button</button>
+            </div>
+            <div class="xenegugeli">
+                <button class="uk-button uk-button-default"
+                    uk-tooltip="You are so good at this, now please continue by clicking you are awesome 2">:)</button>
+            </div>
+
+
+            <ul uk-accordion>
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">You are awesome 1</a>
+                    <div class="uk-accordion-content">
+                        <p>:)</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">You are awesome 2</a>
+                    <div class="uk-accordion-content">
+                        <p>Bravo! If you are still not Happy, please press the Link :)</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">You are awesome 3</a>
+                    <div class="uk-accordion-content">
+                        <p>:)</p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="uk-list uk-link-text color">
+                <li><a href="http://make-everything-ok.com/">Link</a>
+
+            </ul>
+
+        </div>
+        <div class="uk-container uk-container-xsmall uk-invisible">
+    
+            <p>This site was created by Creatali while he was taking a Class about Website Developement.
+                This site is still in Progress, so there could be additional changes in the Future.</p>
+  
+
+      
+            <p>This Website was specifically created to make People with a low Self esteem happy. Inspired
+                by the "make-everything-ok" button.</p>
+   
+   
+            <p>So if you ever Feel sad or overwhelmed, feel free to come here to get back up again. Also
+                don't hesitate do share this site with your Friends.</p>
+
+        </div>
+
+
+        <footer class="uk-position-bottom">
+            <div class="uk-container uk-container-xsmall">
+    
+                <p>This site was created by Creatali while he was taking a Class about Website Developement.
+                    This site is still in Progress, so there could be additional changes in the Future.</p>
+      
+
+          
+                <p>This Website was specifically created to make People with a low Self esteem happy. Inspired
+                    by the "make-everything-ok" button.</p>
+       
+       
+                <p>So if you ever Feel sad or overwhelmed, feel free to come here to get back up again. Also
+                    don't hesitate do share this site with your Friends.</p>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
